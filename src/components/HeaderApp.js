@@ -12,6 +12,7 @@ class HeaderApp extends HTMLElement {
         :host{
 
         }
+		
 		span{
             color: var(--color--span);
             font-weight: var(--text--bold);
@@ -36,12 +37,14 @@ class HeaderApp extends HTMLElement {
             width:100%;
             height:5rem;
         }
+
 		.me
         .me__picture{
             position:absolute;
             top:-10rem;
             left:5rem
         }
+
         .me
         .me__picture 
         .me__picture--img{
@@ -80,6 +83,7 @@ class HeaderApp extends HTMLElement {
 			padding:1rem;
 			border-radius:1rem;
 		}
+
 		.me
 		.me__button:hover,
 		.info__name--dav:hover {
@@ -88,9 +92,6 @@ class HeaderApp extends HTMLElement {
 			border-radius:1rem;
 			cursor:pointer;
 		}
-
-		
-       
     `;
   }
 
