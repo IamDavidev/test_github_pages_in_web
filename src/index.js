@@ -1,1 +1,1 @@
-import './components/PortfolioWeb.js';
+import './PortfolioWeb.js';

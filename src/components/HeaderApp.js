@@ -1,22 +1,40 @@
-import headerImg from '../assets/Header.jpeg';
-import ImgMe from '../assets/ME.jpeg';
-
+import './AboutMe'
+import headerImg from '../assets/pages/Header.jpeg';
+import ImgMe from '../assets/pages/ME.jpeg';
 class HeaderApp extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow({ mode: 'open' });
-  }
+    constructor() {
+        super();
+        this.attachShadow({ mode: 'open' });
+    }
 
-  static get styles() {
-    return /*css*/ `
+    static get styles() {
+        return /*css*/ `
         :host{
 
         }
 		
-		span{
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            min-height:100vh;
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+		.span__style{
             color: var(--color--span);
             font-weight: var(--text--bold);
             letter-spacing: var(--text--spacing);
+        }
+
+        .shadow__img{
+            box-shadow: var(--box--shadow);
         }
 
         .header 
@@ -55,7 +73,7 @@ class HeaderApp extends HTMLElement {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            
+            border:2px solid var(--background--primary)
         }
 
 		.me 
@@ -64,23 +82,26 @@ class HeaderApp extends HTMLElement {
 			border:none;
 			position:absolute;
 			right:0;
-			margin:.5rem;
+            margin:.5rem 0;
 			transition: 1.5s ;
 			border-radius:1rem;
-			padding:1rem;
+			padding:.5rem;
+            text-decoration:none;
 		}
 		
 		.me
 		.me__button
 		.me__button--contact{
-			padding:.3rem;
+			padding:.5rem;
 		}
 
 		.info 
 		.info__name
 		.info__name--dav{
+            text-decoration:none;
+            color:var(--color--span);
 			transition: 1.5s ;
-			padding:1rem;
+			padding:.5rem;
 			border-radius:1rem;
 		}
 
@@ -93,45 +114,46 @@ class HeaderApp extends HTMLElement {
 			cursor:pointer;
 		}
     `;
-  }
+    }
 
-  connectedCallback() {
-    this.render();
-  }
+    connectedCallback() {
+        this.render();
+    }
 
-  render() {
-    this.shadowRoot.innerHTML = /*html*/ `
+    render() {
+        this.shadowRoot.innerHTML = /*html*/ `
         <style>${HeaderApp.styles}</style>
     <div class='container'>
         <div class='renderHeader'>
            <header class='header'>
                 <picture class='header__picture'>
-                    <img src="${headerImg}" alt="headerItsDavidev" class='header__picture--img'/>
+                    <img src="${headerImg}" alt="headerItsDavidev" class='header__picture--img shadow__img'/>
                 </picture>
            </header>
            <section class='mainMe'>
                 <header class='me'>
                     <picture class='me__picture'>
-                        <img src='${ImgMe}' alt="David Lezama" class='me__picture--img' />
+                        <img src='${ImgMe}' alt="David Lezama" class='me__picture--img shadow__img' />
                     </picture>
-                    <button class='me__button'>
-                        <span class='me__button--contact'>
+                    <a href='#' class='me__button'>
+                        <h2 class='me__button--contact span__style'>
                             contacta conmigo
-                        </span>
-                    </button>
+                        </h2>
+                    </a>
                 </header>
                 <div class='info'>
-                	<p class='info__name'>
-                        Brayan David Lezama Trejo <span class='info__name--dav'>@ItsDavidev</span>
-                	</p>
+                	<h1 class='info__name'>
+                        Brayan David Lezama Trejo <a href='#' class='info__name--dav span__style'>@ItsDavidev</a>
+                	</h1>
                 	<p class='info__position'>
                         Desarrollador Web Frontend
                 	</p>
                 </div>
            </section>
+           <about-app></about-app>
         </div>
     </div>
     `;
-  }
+    }
 }
 customElements.define('header-app', HeaderApp);

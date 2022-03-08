@@ -1,4 +1,7 @@
-import './HeaderApp';
+import './components/HeaderApp';
+import './components/ProjectsApp'
+
+
 
 class PortfolioWeb extends HTMLElement {
   constructor() {
@@ -30,6 +33,7 @@ class PortfolioWeb extends HTMLElement {
      <div class='container'>
          <div class='renderApp'>     
             <header-app></header-app>
+            <projects-app></projects-app>
          </div>
     </div>
     `;
