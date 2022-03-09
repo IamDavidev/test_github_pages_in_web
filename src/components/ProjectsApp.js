@@ -35,8 +35,8 @@ class ProjectsApp extends HTMLElement {
         <div class='renderProjects'>
             <card-project name='dblog'></card-project>
             <card-project name='galleryPage'></card-project>
-            <card-project name='DavWord'></card-project>
-            <card-project name='davSock'></card-project>
+            <card-project name='davword'></card-project>
+            <card-project name='davsock'></card-project>
             <card-project name='web3login'></card-project>
             <card-project name='davtion'></card-project>
         </div>

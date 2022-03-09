@@ -1,9 +1,19 @@
 import dblog from '../assets/projects/dblog.png';
 import megithub from '../assets/projects/megithub.jpeg';
+import galleryPage from '../assets/projects/gallerypage.png'
+import davword from '../assets/projects/davword.png';
+import davtion from '../assets/projects/davtion.png'
+import web3login from '../assets/projects/web3login.png'
+import davsock from '../assets/projects/davsock.png'
 
 const projects = {
   dblog,
   megithub,
+  galleryPage,
+  davword,
+  davtion,
+  web3login,
+  davsock
 };
 
 class CardProject extends HTMLElement {
@@ -151,11 +161,11 @@ class CardProject extends HTMLElement {
       .then((res) => res.json())
       .then(async (data) => {
         console.log(data);
-        const { description, homepage, url, name, language, html_url } = data;
+        const { description, homepage, svn_url, name, language, html_url } = data;
         return {
           description,
           homepage,
-          url,
+          svn_url,
           name,
           html_url,
           language,
@@ -181,13 +191,14 @@ class CardProject extends HTMLElement {
         <article >
         <a href="${this.infoRepo?.homepage}" class="card">
         <picture class='card__picture'>
-            <img src="${
-              projects[this.name]
-            }" class="card__picture---img" alt="" />
+            <img 
+            src="${projects[this.name]}" 
+            class="card__picture---img" 
+            alt="${this.name}" />
         </picture>
         <div class="card__information">
           <header class="card__information--header">                
-            <img class="card__information--img" src="${megithub}" alt="" />
+            <img class="card__information--img" src="${megithub}" alt="itsDavidev" />
             <div class="card__information--text">
               <h3 class="card__information--name">${this.infoRepo?.name}</h3>
              <span>
@@ -201,7 +212,7 @@ class CardProject extends HTMLElement {
         </div>
       </a>    
         </article>   
-        <a href="${this.infoRepo?.url}" class='btn__demo'>
+        <a href="${this.infoRepo?.svn_url}" target="_blank" class='btn__demo'>
          demo    
         </a>
     </section>
