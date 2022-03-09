@@ -17,7 +17,7 @@ class TechnologieApp extends HTMLElement {
           padding: 0;
     } 
     .container{
-        margin: 5rem 15rem;
+        margin: 3rem 12rem;
     }
 
     .container
@@ -25,7 +25,7 @@ class TechnologieApp extends HTMLElement {
         display:flex;
         justify-content:center;
         align-items:center;
-        gap:3rem;
+        gap:2rem;
         flex-wrap:wrap;
     }
     `;
@@ -40,10 +40,28 @@ class TechnologieApp extends HTMLElement {
         <style>${TechnologieApp.styles}</style>
  <div class='container'>
      <div class='renderTechnologiesApp'>
+
         <card-technologie tec='js'></card-technologie>
         <card-technologie tec='html'></card-technologie>
         <card-technologie tec='css'></card-technologie>
         <card-technologie tec='react'></card-technologie>
+        <card-technologies tec='ts'></card-technologies>
+        <card-technologie tec='postcss'></card-technologie>
+        <card-technologie tec='sass'></card-technologie>
+        <card-technologie tec='cssmodules'></card-technologie>
+        <card-technologie tec='tailwind'></card-technologie>
+        <card-technologie tec='mongodb'></card-technologie>
+        <card-technologie tec='firebase'></card-technologie>
+        <card-technologie tec='strapi'></card-technologie>
+        <card-technologie tec='mysql'></card-technologie>
+        <card-technologie tec='graphql'></card-technologie>
+        <card-technologie tec='axios'></card-technologie>
+        <card-technologie tec='vue'></card-technologie>
+        <card-technologie tec='figma'></card-technologie>
+        <card-technologie tec='git'></card-technologie>
+        <card-technologie tec='github'></card-technologie>
+        <card-technologie tec='webcomponents'></card-technologie>
+        <card-technologie tec='nodejs'></card-technologie>
      </div>
         <slot></slot>
 </div>

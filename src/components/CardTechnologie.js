@@ -2,7 +2,7 @@ import js from '../assets/technologies/js.svg';
 import css from '../assets/technologies/css.svg';
 import html from '../assets/technologies/html.svg';
 import react from '../assets/technologies/react.svg';
-
+import nodejs from '../assets/technologies/nodejs.svg';
 import webcomponents from '../assets/technologies/webcomponents.svg';
 import ts from '../assets/technologies/ts.svg';
 import sass from '../assets/technologies/sass.svg';
@@ -26,6 +26,7 @@ const technologiesIcons = {
   css,
   react,
   webcomponents,
+  nodejs,
   ts,
   sass,
   tailwind,
@@ -68,10 +69,12 @@ class CardTechnologie extends HTMLElement {
             flex-direction:column;
             justify-content:center;
             align-items:center;
+            width:8rem;
             max-width:8rem;
             box-shadow: var(--box-shadow--technologies);
             margin:1rem;
-            min-height:200px
+            min-height:200px;
+            overflow: hidden;
         }
        
         .card 
