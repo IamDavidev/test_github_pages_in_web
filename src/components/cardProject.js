@@ -160,7 +160,6 @@ class CardProject extends HTMLElement {
     )
       .then((res) => res.json())
       .then(async (data) => {
-        console.log(data);
         const { description, homepage, svn_url, name, language, html_url } = data;
         return {
           description,
@@ -178,7 +177,6 @@ class CardProject extends HTMLElement {
     this.name = this.getAttribute('name');
     this.getRepoGithub().then((data) => {
       this.infoRepo = data;
-      console.log(data);
       this.render();
     });
   }
