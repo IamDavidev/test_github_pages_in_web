@@ -1,6 +1,6 @@
 import './components/HeaderApp';
 import './components/ProjectsApp'
-
+import './components/TecnolgiesApp'
 
 
 class PortfolioWeb extends HTMLElement {
@@ -33,6 +33,7 @@ class PortfolioWeb extends HTMLElement {
      <div class='container'>
          <div class='renderApp'>     
             <header-app></header-app>
+            <technologie-app></technologie-app>
             <projects-app></projects-app>
          </div>
     </div>

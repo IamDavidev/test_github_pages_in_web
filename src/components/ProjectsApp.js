@@ -39,6 +39,8 @@ class ProjectsApp extends HTMLElement {
             <card-project name='davsock'></card-project>
             <card-project name='web3login'></card-project>
             <card-project name='davtion'></card-project>
+            <card-project name='ecomercefrontend'></card-project>
+            <card-project name='agencypage'></card-project>
         </div>
         <slot></slot>
     </div>

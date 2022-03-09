@@ -5,6 +5,8 @@ import davword from '../assets/projects/davword.png';
 import davtion from '../assets/projects/davtion.png'
 import web3login from '../assets/projects/web3login.png'
 import davsock from '../assets/projects/davsock.png'
+import agencypage from '../assets/projects/agencypage.png'
+import ecomercefrontend from '../assets/projects/ecomercefrontend.png'
 
 const projects = {
   dblog,
@@ -13,7 +15,9 @@ const projects = {
   davword,
   davtion,
   web3login,
-  davsock
+  davsock,
+  agencypage,
+  ecomercefrontend
 };
 
 class CardProject extends HTMLElement {
@@ -150,6 +154,15 @@ class CardProject extends HTMLElement {
             font-weight:bold;
 
           }
+          .JavaScript{
+            color:var(--color--js)
+          }
+          .TypeScript{
+            color:var(--color--ts);
+          }
+          .CSS{
+            color:var(--color--css);
+          }
 
     `;
   }
@@ -187,7 +200,7 @@ class CardProject extends HTMLElement {
     <div class='container'>
      <section class='renderCardProject'>
         <article >
-        <a href="${this.infoRepo?.homepage}" class="card">
+        <a href="${this.infoRepo?.homepage}" class="card" target="_blank">
         <picture class='card__picture'>
             <img 
             src="${projects[this.name]}" 
@@ -199,7 +212,7 @@ class CardProject extends HTMLElement {
             <img class="card__information--img" src="${megithub}" alt="itsDavidev" />
             <div class="card__information--text">
               <h3 class="card__information--name">${this.infoRepo?.name}</h3>
-             <span>
+             <span class="${this.infoRepo?.language}">
              ${this.infoRepo?.language}
              </span>
             </div>
@@ -210,7 +223,11 @@ class CardProject extends HTMLElement {
         </div>
       </a>    
         </article>   
-        <a href="${this.infoRepo?.svn_url}" target="_blank" class='btn__demo'>
+        <a 
+        href="${this.infoRepo?.svn_url}" t
+        arget="_blank" 
+        class='btn__demo'
+        >
          demo    
         </a>
     </section>
