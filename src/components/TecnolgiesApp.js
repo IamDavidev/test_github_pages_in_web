@@ -39,8 +39,9 @@ class TechnologieApp extends HTMLElement {
         this.shadowRoot.innerHTML =/*html*/`
         <style>${TechnologieApp.styles}</style>
  <div class='container'>
+        <title-app section='Tecnologias '>
+        </title-app>
      <div class='renderTechnologiesApp'>
-
         <card-technologie tec='js'></card-technologie>
         <card-technologie tec='html'></card-technologie>
         <card-technologie tec='css'></card-technologie>
@@ -48,7 +49,6 @@ class TechnologieApp extends HTMLElement {
         <card-technologies tec='ts'></card-technologies>
         <card-technologie tec='postcss'></card-technologie>
         <card-technologie tec='sass'></card-technologie>
-        <card-technologie tec='cssmodules'></card-technologie>
         <card-technologie tec='tailwind'></card-technologie>
         <card-technologie tec='mongodb'></card-technologie>
         <card-technologie tec='firebase'></card-technologie>

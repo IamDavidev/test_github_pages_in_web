@@ -64,6 +64,7 @@ class AboutApp extends HTMLElement {
     this.shadowRoot.innerHTML = /*html*/ `
         <style>${AboutApp.styles}</style>
  <div class='container'>
+  <title-app section='Sobre Mi'></title-app>
      <div class='renderAbout'>
             <picture class='about__picture'>
                 <img src="${aboutMe}" alt="aboutMe" class='about__picture--img' />

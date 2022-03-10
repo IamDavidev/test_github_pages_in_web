@@ -135,7 +135,11 @@ class HeaderApp extends HTMLElement {
                     <picture class='me__picture'>
                         <img src='${ImgMe}' alt="David Lezama" class='me__picture--img shadow__img' />
                     </picture>
-                    <a href='#' class='me__button'>
+                    <a 
+                    href='https://www.linkedin.com/in/david-lezama-t/' 
+                    target='_blank' 
+                    class='me__button'
+                    >
                         <h2 class='me__button--contact span__style'>
                             contacta conmigo
                         </h2>
@@ -143,7 +147,14 @@ class HeaderApp extends HTMLElement {
                 </header>
                 <div class='info'>
                 	<h1 class='info__name'>
-                        Brayan David Lezama Trejo <a href='#' class='info__name--dav span__style'>@ItsDavidev</a>
+                        Brayan David Lezama Trejo 
+                        <a 
+                        href='https://github.com/itsDavidev' 
+                        target="_blank" 
+                        class='info__name--dav span__style'
+                        >
+                        @ItsDavidev
+                        </a>
                 	</h1>
                 	<p class='info__position'>
                         Desarrollador Web Frontend

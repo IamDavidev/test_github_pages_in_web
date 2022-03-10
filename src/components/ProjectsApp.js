@@ -32,6 +32,7 @@ class ProjectsApp extends HTMLElement {
         this.shadowRoot.innerHTML =/*html*/`
         <style>${ProjectsApp.styles}</style>
     <div class='container'>
+        <title-app section='proyectos'></title-app>
         <div class='renderProjects'>
             <card-project name='dblog'></card-project>
             <card-project name='galleryPage'></card-project>
