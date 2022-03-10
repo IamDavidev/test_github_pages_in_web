@@ -29,6 +29,16 @@ class Title extends HTMLElement {
             letter-spacing:10px;
             border-bottom:1px solid #5bc0be;
         }
+        @media(min-width:300px) and (max-width:768px) {
+            .container--title{
+                letter-spacing:1px;
+            }
+            .container{
+                font-size:1.2rem;
+                text-align:center;
+                margin:0;
+            }
+        }
     `;
     }
 

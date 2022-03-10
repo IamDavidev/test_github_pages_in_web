@@ -96,6 +96,14 @@ class CardTechnologie extends HTMLElement {
             font-size:1rem;
             color:var(--color--span)
         }
+        @media (min-width:300px) and (max-width:600px){
+          .container{
+                        .card{
+              width:300px;
+              
+            }
+          }
+      }
     `;
   }
 

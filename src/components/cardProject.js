@@ -163,6 +163,11 @@ class CardProject extends HTMLElement {
           .CSS{
             color:var(--color--css);
           }
+          @media (min-width:300px) and (max-width:768px) {
+            .card{
+              width:250px
+            }
+          }
 
     `;
   }

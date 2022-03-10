@@ -28,6 +28,11 @@ class TechnologieApp extends HTMLElement {
         gap:2rem;
         flex-wrap:wrap;
     }
+    @media (min-width:300px) and (max-width:600px){
+        .container{
+            margin: 1rem .3rem;
+        }
+    }
     `;
     }
 

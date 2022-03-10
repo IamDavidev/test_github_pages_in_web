@@ -19,6 +19,13 @@ class FooterApp extends HTMLElement {
   margin: 0;
   padding: 0;
 }
+.container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
+}
 .renderFooter{
     display:flex;
     justify-content:center;

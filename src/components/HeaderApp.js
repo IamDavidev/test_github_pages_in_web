@@ -26,6 +26,7 @@ class HeaderApp extends HTMLElement {
             flex-direction:column;
             justify-content:center;
             align-items:center;
+            overflow: hidden;
         }
 		.span__style{
             color: var(--color--span);
@@ -113,6 +114,37 @@ class HeaderApp extends HTMLElement {
 			border-radius:1rem;
 			cursor:pointer;
 		}
+        @media (min-width:300px) and ( max-width:768px) {
+            .me__picture--img{
+                width: 100%;
+                height:150px;
+                margin:0;
+                padding:0;
+            }
+            .me{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center; 
+            }
+            .me 
+            .me__button{
+                position: relative;
+                top:50px;
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top:3rem;
+            }
+            .info
+            .info__name{
+                font-size:1.2rem;
+                text-align:center;
+            }
+        }
     `;
     }
 

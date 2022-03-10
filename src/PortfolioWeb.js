@@ -21,6 +21,11 @@ class PortfolioWeb extends HTMLElement {
     .container{
         padding:3rem;
     }
+    @media(min-width:300px) and (max-width:768px) {
+        .container{
+          padding:0;
+        }
+    }
     `;
   }
 

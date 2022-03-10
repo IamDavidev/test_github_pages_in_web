@@ -53,12 +53,35 @@ class AboutApp extends HTMLElement {
         .about__picture--img{
             box-shadow:var(--box--shadow);
         }
+        @media (min-width:300px) and (max-width:768px){
+          .img{
+            width:100%;
+          }
+          .renderAbout{
+            flex-direction:column;
+          }
+          .about__text{
+            margin:0;
+            padding:1rem;
+            right:0;
+            left:0;
+            bottom:0;
+            width:100%;
+          }
+          .about__text
+          .about__text--sobre{
+            width:100%;
+            padding:0;
+            margin:0;
+          }
+        }
     `;
   }
 
   connectedCallback() {
     this.render();
   }
+
 
   render() {
     this.shadowRoot.innerHTML = /*html*/ `

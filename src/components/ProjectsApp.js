@@ -21,6 +21,14 @@ class ProjectsApp extends HTMLElement {
             display:grid;
             grid-template-columns:repeat(2,1fr);
         }
+        @media (min-width:300px) and (max-width:768px){
+            .renderProjects{
+                display:flex;
+                flex-wrap:wrap;
+                justify-content:center;
+                align-items:center;
+            }
+        }
     `;
     }
 
