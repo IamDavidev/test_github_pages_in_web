@@ -3,6 +3,7 @@ import './components/ProjectsApp'
 import './components/TecnolgiesApp'
 import './components/Title'
 import './components/FormApp'
+import './components/FooterApp'
 class PortfolioWeb extends HTMLElement {
   constructor() {
     super();
@@ -35,7 +36,7 @@ class PortfolioWeb extends HTMLElement {
             <header-app></header-app>
             <technologie-app></technologie-app>
             <projects-app></projects-app>
-            <form-app></form-app>
+            <footer-app></footer-app>
          </div>
     </div>
     `;

@@ -78,6 +78,13 @@ class AboutApp extends HTMLElement {
                 tecnologias y aprender
                 de los demas.
                 </p>
+                <p class='about__text--sobre'>
+                  Estoy en la búsqueda de
+                  una empresa que me permita
+                  desarrollar y mejorar mis
+                  habilidades.
+
+                </p>
             </div>
      </div>
         <slot></slot>
